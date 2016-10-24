@@ -1,78 +1,77 @@
-university,canton,latitude,longitude
-AO Research Institute - AORI,,,
-Allergie- und Asthmaforschung - SIAF,BE,46.94809,7.44744
-Berner Fachhochschule - BFH,,,
-Biotechnologie Institut Thurgau - BITG,,,
-Centre de rech. sur l'environnement alpin - CREALP,BE,46.94809,7.44744
-EPF Lausanne - EPFL,,,
-ETH Zürich - ETHZ,ZH,47.3763,8.54805
-Eidg. Anstalt für Wasserversorgung - EAWAG,BE,46.94809,7.44744
-"Eidg. Forschungsanstalt für Wald,Schnee,Land - WSL",BE,46.94809,7.44744
-Eidg. Hochschulinstitut für Berufsbildung - EHB,BE,46.94809,7.44744
-Eidg. Material und Prüfungsanstalt - EMPA,BE,46.94809,7.44744
-Ente Ospedaliero Cantonale - EOC,,,
-Fachhochschule Kalaidos - FHKD,,,
-Fachhochschule Nordwestschweiz (ohne PH) - FHNW,BE,46.94809,7.44744
-Fachhochschule Ostschweiz - FHO,,,
-Facoltà di Teologia di Lugano - FTL,,,
-Fernfachhochschule Schweiz (Mitglied SUPSI) - FFHS,BE,46.94809,7.44744
-Firmen/Privatwirtschaft - FP,BE,46.94809,7.44744
-Forschungsanstalten Agroscope - AGS,,,
-Forschungsinstitut für Opthalmologie - IRO,,,
-Forschungsinstitut für biologischen Landbau - FIBL,,,
-Forschungskommission SAGW,BE,46.94809,7.44744
-Franklin University Switzerland - FUS,,,
-Friedrich Miescher Institute - FMI,,,
-HES de Suisse occidentale - HES-SO,BE,46.94809,7.44744
-"Haute école pédagogique BE, JU, NE - HEPBEJUNE",BE,46.94809,7.44744
-Haute école pédagogique du canton de Vaud - HEPL,,,
-Haute école pédagogique fribourgeoise - HEPFR,,,
-Hochschule Luzern - HSLU,,,
-Idiap Research Institute - IDIAP,,,
-Inst. Suisse de Spéléologie et Karstologie - ISSKA,BE,46.94809,7.44744
-Inst. de Hautes Etudes Internat. et du Dév - IHEID,BE,46.94809,7.44744
-Inst. universit. romand de Santé au Travail - IST,BE,46.94809,7.44744
-Institut Universitaire Kurt Bösch - IUKB,,,
-Institut für Kulturforschung Graubünden - IKG,,,
-Instituto Ricerche Solari Locarno - IRSOL,,,
-Interkant. Hochschule für Heilpädagogik ZH - HfH,BE,46.94809,7.44744
-Istituto Svizzero di Roma - ISR,,,
-Kantonsspital St. Gallen - KSPSG,BE,46.94809,7.44744
-"NPO (Biblioth., Museen, Verwalt.) - NPO",BE,46.94809,7.44744
-Nicht zuteilbar - NA,,,
-Paul Scherrer Institut - PSI,,,
-Physikal.-Meteorolog. Observatorium Davos - PMOD,BE,46.94809,7.44744
-Pädag. Hochschule Tessin (Teilschule SUPSI) - ASP,BE,46.94809,7.44744
-Pädagogische Hochschule Bern - PHBern,,,
-Pädagogische Hochschule Graubünden - PHGR,,,
-Pädagogische Hochschule Luzern - PHLU,,,
-Pädagogische Hochschule Nordwestschweiz - PHFHNW,,,
-Pädagogische Hochschule Schaffhausen - PHSH,,,
-Pädagogische Hochschule Schwyz - PHSZ,,,
-Pädagogische Hochschule St. Gallen - PHSG,BE,46.94809,7.44744
-Pädagogische Hochschule Thurgau - PHTG,,,
-Pädagogische Hochschule Wallis - PHVS,,,
-Pädagogische Hochschule Zug - PHZG,,,
-Pädagogische Hochschule Zürich - PHZFH,,,
-Robert Walser-Stiftung Bern - RWS,BE,46.94809,7.44744
-SUP della Svizzera italiana - SUPSI,,,
-Schweiz. Hochschule für Logopädie Rorschach - SHLR,BE,46.94809,7.44744
-Schweiz. Institut für Kunstwissenschaft - SIK-ISEA,BE,46.94809,7.44744
-Schweizer Kompetenzzentrum Sozialwissensch. - FORS,BE,46.94809,7.44744
-Schweizer Paraplegiker Forschung - SPF,,,
-Staatsunabh. Theologische Hochschule Basel - STHB,BE,46.94809,7.44744
-Swiss Center for Electronics and Microtech. - CSEM,BE,46.94809,7.44744
-Swiss Institute of Bioinformatics - SIB,,,
-Università della Svizzera italiana - USI,,,
-Universität Basel - BS,BS,47.55832,7.58403
-Universität Bern - BE,BE,46.95096,7.43548
-Universität Luzern - LU,,,
-Universität St. Gallen - SG,BE,46.94809,7.44744
-Universität Zürich - ZH,ZH,47.37092,8.53434
-Université de Fribourg - FR,,,
-Université de Genève - GE,,,
-Université de Lausanne - LA,VD,46.52376,6.58409
-Université de Neuchâtel - NE,,,
-Weitere Institute - FINST,,,
-Weitere Spitäler - ASPIT,,,
-Zürcher Fachhochschule (ohne PH) - ZFH,BE,46.94809,7.44744
+University,Canton,Latitude,Longitude
+Université de Genève,GE,46.199444,6.1451157
+"NPO (Biblioth., Museen, Verwalt.)",,,
+Universität Basel,BS,47.56025349999999,7.5826
+Université de Fribourg,FR,46.806357,7.152006
+Universität Zürich,ZH,47.3743221,8.550981199999999
+Université de Lausanne,VD,46.5210895,6.5801606
+Universität Bern,BE,46.9504896,7.438119000000002
+"Eidg. Forschungsanstalt für Wald,Schnee,Land",,,
+Université de Neuchâtel,NE,46.9938549,6.938703099999999
+ETH Zürich,ZH,47.376313,8.547669899999999
+Inst. de Hautes Etudes Internat. et du Dév,GE,46.22091630000001,6.143691599999999
+Universität St. Gallen,SG,47.43215749999999,9.3755673
+Weitere Institute,,,
+Firmen/Privatwirtschaft,,,
+Pädagogische Hochschule Graubünden,GR,46.8669842,9.536720899999999
+EPF Lausanne,VD,46.5190557,6.566757600000001
+Pädagogische Hochschule Zürich,ZH,47.3776241,8.534657200000002
+Universität Luzern,LU,47.0494042,8.312521499999999
+Schweiz. Institut für Kunstwissenschaft,ZH,47.362492,8.555274899999997
+SUP della Svizzera italiana,TI,46.0233459,8.917128700000001
+HES de Suisse occidentale,JU,47.3625918,7.3522363
+Robert Walser-Stiftung Bern,BE,46.94793850000001,7.445112199999998
+Paul Scherrer Institut,AG,47.53857199999999,8.229908
+Pädagogische Hochschule St. Gallen,SG,47.43028289999999,9.3824689
+Eidg. Anstalt für Wasserversorgung,ZH,47.4037666,8.609547599999999
+Eidg. Material und Prüfungsanstalt,,,
+Physikal.-Meteorolog. Observatorium Davos,,,
+Berner Fachhochschule,BE,47.0574225,7.621387700000001
+Swiss Center for Electronics and Microtech.,,,
+Weitere Spitäler,,,
+AO Research Institute,GR,46.7771199,9.8136932
+Allergie- und Asthmaforschung,GR,46.7954192,9.8200409
+Forschungsinstitut für biologischen Landbau,HE,50.12062,8.638150000000001
+Friedrich Miescher Institute,BS,47.56774159999999,7.603559899999998
+Kantonsspital St. Gallen,SG,47.4303373,9.3868891
+Forschungsanstalten Agroscope,,,
+Ente Ospedaliero Cantonale,TI,46.1968913,9.026636499999999
+Inst. universit. romand de Santé au Travail,VD,46.5432643,6.661678900000001
+Eidg. Hochschulinstitut für Berufsbildung,BE,47.001506,7.450692999999999
+Zürcher Fachhochschule (ohne PH),ZH,47.3776241,8.534657200000002
+Università della Svizzera italiana,TI,46.0109603,8.958257200000002
+Institut für Kulturforschung Graubünden,GR,46.85109979999999,9.533924299999999
+Fachhochschule Nordwestschweiz (ohne PH),,,
+Interkant. Hochschule für Heilpädagogik ZH,ZH,47.4032152,8.5471186
+Centre de rech. sur l'environnement alpin,VS,46.2285589,7.367433499999999
+Idiap Research Institute,VS,46.109376,7.084442999999999
+Pädagogische Hochschule Bern,BE,46.9522372,7.422682999999999
+Institut Universitaire Kurt Bösch,VS,46.2301033,7.3987243
+Schweizer Paraplegiker Forschung,LU,47.13998429999999,8.1310359
+Hochschule Luzern,LU,47.046681,8.314912
+Forschungsinstitut für Opthalmologie,BW,48.523927,9.0534833
+Haute école pédagogique du canton de Vaud,VD,46.5128571,6.6215937
+Fachhochschule Ostschweiz,SG,47.4208058,9.363574999999999
+Inst. Suisse de Spéléologie et Karstologie,NE,47.09975319999999,6.823160199999999
+Swiss Institute of Bioinformatics,,,
+"Haute école pédagogique BE, JU, NE",,,
+Pädagogische Hochschule Luzern,LU,47.0510453,8.3023319
+Forschungskommission SAGW,,,
+Istituto Svizzero di Roma,Lazio,41.90634319999999,12.4876114
+Pädag. Hochschule Tessin (Teilschule SUPSI),,,
+Haute école pédagogique fribourgeoise,FR,46.8111769,7.159208400000001
+Pädagogische Hochschule Schwyz,SZ,47.0450543,8.5532354
+Pädagogische Hochschule Thurgau,TG,47.6475771,9.1806833
+Biotechnologie Institut Thurgau,TG,47.64832730000001,9.161303
+Fachhochschule Kalaidos,ZH,47.415454,8.543825
+Schweizer Kompetenzzentrum Sozialwissensch.,,,
+Pädagogische Hochschule Wallis,VS,46.2155597,7.005294300000001
+Schweiz. Hochschule für Logopädie Rorschach,SG,47.4726127,9.4948635
+Pädagogische Hochschule Zug,ZG,47.16221090000001,8.5188031
+Instituto Ricerche Solari Locarno,TI,46.1768822,8.789081999999999
+Franklin University Switzerland,TI,45.997588,8.938819
+Pädagogische Hochschule Schaffhausen,SH,47.7073984,8.645286199999997
+Pädagogische Hochschule Nordwestschweiz,SO,47.3480153,7.9078154
+Staatsunabh. Theologische Hochschule Basel,,,
+Facoltà di Teologia di Lugano,TI,46.0106931,8.9579396
+Fernfachhochschule Schweiz (Mitglied SUPSI),VS,46.317923,7.983177
