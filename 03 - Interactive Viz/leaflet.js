@@ -1,17 +1,14 @@
-var uniIcon = L.AwesomeMarkers.icon({
+var universityIcon = L.AwesomeMarkers.icon({
     icon: 'university',
     prefix: 'fa',
     markerColor: 'cadetblue'
 });
 
-var uniMarkers = L.layerGroup();
-for (var uni in unis) {
-	if (unis.hasOwnProperty(uni)) {
-		var lat = unis[uni]['Latitude'];
-		var lng = unis[uni]['Longitude'];
-		
-		uniMarkers.addLayer(L.marker([lat, lng], {icon: uniIcon}).bindPopup(uni));
-	}
+var universityMarkers = L.layerGroup();
+for (var i = 0; i < universities.length; i++) {
+	var uni = universities[i];
+	
+	universityMarkers.addLayer(L.marker([uni["latitude"], uni["longitude"]], {icon: universityIcon}).bindPopup(uni["name"]));
 }
 
 var background = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
@@ -33,32 +30,27 @@ var map = L.map('map', {
     minZoom: 8,
     maxZoom: 10,
     /* maxBounds: L.latLngBounds(L.latLng(45.72152, 5.60852), L.latLng(47.91266, 10.98083)), */
-    layers: [background, names, uniMarkers]
+    layers: [background, names, universityMarkers]
 });
-
-var baseMaps = {
-    "Background": background
-};
 
 var overlayMaps = {
 	"Names": names,
-    "Universities": uniMarkers
+    "Universities": universityMarkers
 };
 
-L.control.layers({}, overlayMaps).addTo(map);
+L.control.layers(null, overlayMaps).addTo(map);
 
 function getColor(d) {
-	return d > 112710220 ? '#005a32' :
-	 	   d > 37094911  ? '#238443' :
-	 	   d > 11466776  ? '#41ab5d' :
-	 	   d > 3441410   ? '#78c679' :
-	 	   d > 1556147   ? '#addd8e' :
-	 	   d > 548475    ? '#d9f0a3' :
+	return d >= scale[4] ? '#006837' :
+	 	   d >= scale[3] ? '#31a354' :
+	 	   d >= scale[2] ? '#78c679' :
+	 	   d >= scale[1] ? '#addd8e' :
+	 	   d >= scale[0] ? '#d9f0a3' :
 	 	   		           '#ffffcc';
 }
 
 function style(feature) {
-	var amount = feature.id in cantons ? cantons[feature.id]["Approved Amount"] : 0;
+	var amount = feature.id in cantons ? cantons[feature.id] : 0;
     return {
         fillColor: getColor(amount),
         weight: 2,
@@ -73,8 +65,6 @@ function highlightFeature(e) {
     var layer = e.target;
 
     layer.setStyle({
-        //weight: 5,
-        //color: '#606060',
         dashArray: '',
         fillOpacity: 0.85
     });
@@ -126,7 +116,7 @@ var n = this,
 // method that we will use to update the control based on feature properties passed
 info.update = function (feature) {
 	if (feature) {
-		var amount = feature.id in cantons ? cantons[feature.id]["Approved Amount"].formatMoney(2, '.', ' ') : 0;
+		var amount = feature.id in cantons ? cantons[feature.id].formatMoney(2, '.', ' ') : 0;
 	}
     this._div.innerHTML = '<h4>Research Funding</h4>' +  (feature ?
         '<b>' + feature.properties.name + '</b><br />' + amount + ' CHF'
@@ -142,15 +132,15 @@ function toMillions(number) {
 }
 
 legend.onAdd = function (map) {
-
-    var div = L.DomUtil.create('div', 'info legend'),
-        grades = [0, 548475, 1556147, 3441410, 11466776, 37094911, 112710220],
-        labels = [];
+    var div = L.DomUtil.create('div', 'info legend');
+    var grades = scale.slice(0);
+    grades.unshift(0);
 
     // loop through our density intervals and generate a label with a colored square for each interval
     for (var i = 0; i < grades.length; i++) {
+    	console.log(grades[i], getColor(grades[i]));
         div.innerHTML +=
-            '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+            '<i style="background:' + getColor(grades[i]) + '"></i> ' +
             toMillions(grades[i]) + (grades[i + 1] ? ' &ndash; ' + toMillions(grades[i + 1]) + '<br>' : '+');
     }
 
