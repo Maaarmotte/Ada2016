@@ -86,6 +86,11 @@ function highlightFeature(e) {
         fillOpacity: 0.85
     });
 
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+	roestigrabenLine.bringToFront();
+    }
+
     info.update(layer.feature);
 }
 
