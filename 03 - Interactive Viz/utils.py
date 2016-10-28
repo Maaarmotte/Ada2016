@@ -60,3 +60,12 @@ def search_uni(university_name):
         place_id, lat, lng = place
         canton = search_canton(place_id)
         return (canton, lat, lng)
+
+from IPython.display import HTML, display
+def display_map():
+    iframe = HTML('''
+    <div style="position:relative;width:100%;height:0;padding-bottom:60%;">
+    <iframe src="leaflet.html" style="position:absolute;width:100%;height:100%;left:0;top:0;"></iframe></div>
+    ''')
+    display(iframe)
+
