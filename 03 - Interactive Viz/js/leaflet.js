@@ -33,9 +33,26 @@ var map = L.map('map', {
     layers: [background, names, universityMarkers]
 });
 
-var overlayMaps = {
+var roestigrabenPoints = [
+	new L.LatLng(47.44009389, 7.32732296),
+	new L.LatLng(47.30491374, 7.52383232),
+	new L.LatLng(46.95251209, 7.02283859),
+	new L.LatLng(46.8064773, 7.1619719),
+	new L.LatLng(46.38426484, 7.26779938),
+	new L.LatLng(46.38848025, 7.55215645),
+	new L.LatLng(45.98665724, 7.57764816),
+];
+
+var roestigrabenLine = new L.Polyline(roestigrabenPoints, {
+	color: 'red',
+	weight: 5,
+	opacity: 0.9
+});
+
+var overlayMaps = {	
 	"Names": names,
-    "Universities": universityMarkers
+    "Universities": universityMarkers,
+    "Röstigraben": roestigrabenLine
 };
 
 L.control.layers(null, overlayMaps).addTo(map);
@@ -57,7 +74,7 @@ function style(feature) {
         opacity: 1,
         color: 'white',
         dashArray: '3',
-        fillOpacity: 0.7
+        fillOpacity: 0.9
     };
 }
 
@@ -71,6 +88,7 @@ function highlightFeature(e) {
 
     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
         layer.bringToFront();
+	roestigrabenLine.bringToFront();
     }
 
     info.update(layer.feature);
