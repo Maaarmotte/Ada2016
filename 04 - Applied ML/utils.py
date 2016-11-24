@@ -67,4 +67,4 @@ def ber(truth, predicted, classes):
                 classError += 1
         errors += classError/lengths[c]
             
-    return 1-errors/len(classes)
+    return errors/len(classes)
